@@ -1,0 +1,24 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.9375rem;
+    
+}
+
+.right_navbar{
+    display: flex;
+    justify-content: space-around;
+    a{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-decoration: none;
+        color:$veryDarkBlue;
+        font-family: $fontBarlowCondensed;
+        font-weight: 700;
+        &:last-child{
+            padding-left: 2.5rem;
+            color:$grayishBlue
+        }
+    }
+
+}

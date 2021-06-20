@@ -1,0 +1,43 @@
+section{
+    margin-top: 5rem;
+    &.section_left{
+        .top_heading{
+            h4{
+                display: inline-block;
+                font-family: $fontBarlow;
+                &:first-child{
+                    background-color: $veryDarkBlue;
+                    color: white;
+                    font-weight: 700;
+                    border-radius: 2rem;
+                    padding: 0.2rem 1rem;
+                }
+                &:last-child{
+                    color: $grayishBlue;
+                    font-weight: 400;
+                }
+            }
+        }
+        .middle_heading{
+            h1{
+                font-family: $fontBarlowCondensed;
+                font-weight: 700;
+                font-size: 6rem;
+                text-transform: uppercase;
+                
+            }
+            br{
+                 content: "A" !important;
+                 display: block !important;
+                margin-bottom: .1rem !important;
+            }
+        }
+        .bottom_heading{
+            h4{
+            font-family: $fontBarlow;
+            font-weight: 400;
+            color: $grayishBlue;
+            }
+        }
+    }
+}

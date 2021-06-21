@@ -1,5 +1,18 @@
 body {
   font-size: 1.125rem;
+  overflow-x: hidden;
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none  !important;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none  !important;
+  }
 }
 
 nav {
@@ -12,6 +25,12 @@ nav {
   margin-top: 3.9375rem;
 }
 
+@media (max-width: 63.9375em) {
+  nav {
+    margin-bottom: 3rem;
+  }
+}
+
 .right_navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,7 +39,7 @@ nav {
       justify-content: space-around;
 }
 
-.right_navbar a {
+.right_navbar_links a {
   padding-left: 1rem;
   padding-right: 1rem;
   text-decoration: none;
@@ -29,13 +48,43 @@ nav {
   font-weight: 700;
 }
 
-.right_navbar a:last-child {
+.right_navbar_links a:hover {
+  color: #485284;
+}
+
+.right_navbar_links a:last-child {
   padding-left: 2.5rem;
   color: #a0a1ac;
 }
 
+.right_navbar_links a:hover:last-child {
+  color: #bbbcc4;
+}
+
 section {
   margin-top: 5rem;
+}
+
+section.section_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 63.9375em) {
+  section.section_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  section.section_left {
+    width: 100%;
+  }
 }
 
 section.section_left .top_heading h4 {
@@ -73,5 +122,45 @@ section.section_left .bottom_heading h4 {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   color: #a0a1ac;
+}
+
+section.section_left .button_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3rem;
+}
+
+section.section_left .button_group button {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  background-color: #ff5c5c;
+  color: white;
+  border: 0rem none white;
+  padding: .4rem 1rem;
+  border-radius: .3rem;
+}
+
+section.section_left .button_group button:hover {
+  background-color: #ff8080;
+}
+
+section.section_left .button_group h4 {
+  font-family: "Barlow", sans-serif;
+  color: #a0a1ac;
+  padding-left: 1.3rem;
+  padding: .4rem 1rem;
+}
+
+section.section_right {
+  width: 38%;
+}
+
+@media (max-width: 63.9375em) {
+  section.section_right {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

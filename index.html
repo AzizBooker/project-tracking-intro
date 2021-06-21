@@ -33,16 +33,27 @@
     <div class="left_navbar">
       <img src="Images/logo.svg" />
     </div>
-    <div class="right_navbar">
+    <div class="right_navbar_links hide-for-mobile">
       <a href="#"> Product </a>
       <a href="">Features</a>
       <a href="#"> Pricing </a>
       <a href="#"> Login </a>
     </div>
+    <div class="right_navbar_icon hide-for-desktop">
+     <button type="button" data-bs-primary="modal" data-bs-target="#exampleModal">
+        <img src="./Images/icon-hamburger.svg" alt="">
+      </button>
+      
+      
+      
+    </div>
+
 
   </nav>
+<section class="section_container container">
 
-  <section class="section_left container">
+
+  <section class="section_left ">
     <div class="top_heading">
       <h4>New</h4>
       <h4>Monograph Dashboard</h4>
@@ -53,18 +64,19 @@
     <div class="bottom_heading">
       <h4> Project planning and time tracking <br>for agile teams</h4>
     </div>
+    <div class="button_group">
+      <button>Schedule a demo</button>
+      <h4>To see a preview</h4>
+    </div>
+  </section>
+  <section class="section_right ">
+    <img src="./Images/illustration-devices.svg" alt="" srcset="">
+  </section>
 
   </section>
 
 
 
-  Monograph Dashboard
-
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
-
-  Schedule a demo
-  to see a live preview
 
   <footer>
     <p class="attribution">
@@ -73,5 +85,9 @@
     </p>
   </footer>
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
 </html>

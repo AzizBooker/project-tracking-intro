@@ -2,23 +2,40 @@ nav{
     display: flex;
     justify-content: space-between;
     margin-top: 3.9375rem;
+    @include breakpoint-down("medium"){
+        margin-bottom: 3rem;
+    }
     
 }
 
 .right_navbar{
     display: flex;
     justify-content: space-around;
+    &_links{
     a{
+        
         padding-left: 1rem;
         padding-right: 1rem;
         text-decoration: none;
         color:$veryDarkBlue;
         font-family: $fontBarlowCondensed;
         font-weight: 700;
+        &:hover{
+            color: $lighterVeryDarkBlue;
+
+        }
         &:last-child{
             padding-left: 2.5rem;
             color:$grayishBlue
+            
+        }
+        &:hover:last-child{
+            color:$lighterGrayishBlue
         }
     }
+    &_icon{
+
+    }
+}
 
 }

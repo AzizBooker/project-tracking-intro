@@ -7,7 +7,10 @@ nav{
     }
     
 }
-
+#hamburger_menu_close{
+    display: none;
+    
+}
 .right_navbar{
     display: flex;
     justify-content: space-around;
@@ -33,9 +36,60 @@ nav{
             color:$lighterGrayishBlue
         }
     }
-    &_icon{
+    
 
+    
+}
+&_icon{
+    a{
+        z-index: 2;
     }
 }
 
 }
+
+.menu_modal{
+    display: none;
+    position: absolute;
+    transform-origin: center;
+    top: 30%;
+    left: 40%;
+    background-color: white;
+    border-radius: 1rem;
+    width: 20rem;
+    box-shadow:-10px 10px 59px  $lighterGrayishBlue ;
+    padding: 2rem 1rem;
+    z-index: 3;
+    text-align: center;
+    transition: 1s;
+
+    h1{
+        color: $veryDarkBlue;
+        text-transform: uppercase;
+        font-family: $fontBarlowCondensed;
+        font-weight: 700;
+        &:hover{
+            color: $lighterVeryDarkBlue;
+            cursor: pointer;
+        }
+        &:last-child{
+            color:$grayishBlue;
+        }
+        &:last-child:hover{
+            cursor: pointer;
+            color: $lighterGrayishBlue;
+        }
+    }
+    
+}
+
+.overlay{
+    display: none;
+        position: absolute;
+        height: 200vh;
+        width: 100vw;
+        z-index: 1;
+        backdrop-filter: blur(6px);
+        padding: 0rem 0rem;
+        margin: 0rem 0rem;
+    }

@@ -29,6 +29,9 @@
 </head>
 
 <body>
+
+<div class="overlay"></div>
+
   <nav class="container">
     <div class="left_navbar">
       <img src="Images/logo.svg" />
@@ -40,14 +43,19 @@
       <a href="#"> Login </a>
     </div>
     <div class="right_navbar_icon hide-for-desktop">
-     <button type="button" data-bs-primary="modal" data-bs-target="#exampleModal">
-        <img src="./Images/icon-hamburger.svg" alt="">
-      </button>
-      
-      
-      
+       <a href="#" id="hamburger_menu_open"> <img src="./Images/icon-hamburger.svg" alt="" ></a>   
+       <a href="#" id="hamburger_menu_close"> <img src="./Images/icon-close.svg" alt="" ></a>   
     </div>
+    <div class="menu_modal ">
+      <h1>Product</h1>
+      <h1>Features</h1>
+      <h1>Pricing</h1>
+      <hr>
+      <h1>Login 
 
+      </h1>
+    </div>
+    <div class="overlay"></div>
 
   </nav>
 <section class="section_container container">
@@ -78,12 +86,7 @@
 
 
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
